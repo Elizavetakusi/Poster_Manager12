@@ -5,10 +5,12 @@ public class Poster {
     private int limit;
 
     public Poster() {
+
         this.limit = 10;
     }
 
     public Poster(int limit) {
+
         this.limit = limit;
     }
 
@@ -30,7 +32,7 @@ public class Poster {
 
     public String[] findLast() {
         int resultLength;
-        if (movies.length > 10) {
+        if (movies.length < 10) {
             resultLength = movies.length;
         } else {
             resultLength = 10;
